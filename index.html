@@ -28,7 +28,7 @@
 
 
     <!--? Slider Area Start-->
-    <div class="slider-area">
+    <!-- <div class="slider-area">
         <div class="slider-active">
             <div class="single-slider slider-height hero-overly d-flex align-items-center">
                 <div class="container">
@@ -42,8 +42,46 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Slider Area End-->
+
+
+
+
+        <!--? Slider Area Start-->
+        <div class="slider-area">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height hero-overly d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-8 col-lg-6 col-md-8 ">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInLeft" data-delay=".3s">Noviembre 22</span>
+                                    <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Juli<strong> & </strong> Nacho</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".9s">Nos casamos!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Slider -->
+                <div class="single-slider slider-height hero-overly d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-8 col-lg-6 col-md-8 ">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInLeft" data-delay=".3s">Noviembre 22</span>
+                                    <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Juli<strong> & </strong> Nacho</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".9s">Nos casamos!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Area End-->
 
 
 
@@ -52,7 +90,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                      <div class="story-img">
-                        <img  class="story2" src="assets/img/gallery/12.jpeg" alt="">
+                        <img  class="story2" src="assets/img/hero/homeHero1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -102,7 +140,7 @@
 
 
 
-
+<!-- 
     <div class="Our-story-area story-padding" data-background="assets/img/gallery/section_bg1.png">
         <div class="container">
             <div class="row justify-content-center">
@@ -114,7 +152,7 @@
             </div>
         </div>
     </div>
-
+ -->
 
 
 
@@ -130,53 +168,9 @@
 </footer>
 
 
-<style>
-    .single-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Espacia el contenido para mantener el botón siempre visible */
-        height: 100%; /* Asegúrate de que la tarjeta ocupe toda la altura disponible */
-    }
-    .card-buttons {
-        margin-top: auto; /* Empuja el botón hacia la parte inferior */
-    }
-</style>
 
-<!-- Script para activar el countdown -->
-<script>
-    // Fecha de destino (22 de noviembre de 2024 a las 12:00 PM UTC)
-    const targetDate = new Date("2024-11-22T12:00:00Z").getTime();
 
-    function updateCountdown() {
-        const now = new Date().getTime(); // Fecha y hora actuales
-        const timeLeft = targetDate - now;
 
-        // Cálculo de días, horas, minutos y segundos
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        // Actualizar los elementos del DOM
-        document.getElementById("days").textContent = days;
-        document.getElementById("hours").textContent = hours;
-        document.getElementById("minutes").textContent = minutes;
-        document.getElementById("seconds").textContent = seconds;
-
-        // Cuando el countdown termine
-        if (timeLeft < 0) {
-            clearInterval(interval);
-            document.getElementById("days").textContent = 0;
-            document.getElementById("hours").textContent = 0;
-            document.getElementById("minutes").textContent = 0;
-            document.getElementById("seconds").textContent = 0;
-            alert("The countdown has ended!");
-        }
-    }
-
-    // Actualizar el countdown cada segundo
-    const interval = setInterval(updateCountdown, 1000);
-</script>
 
     <!-- JS here -->
 
